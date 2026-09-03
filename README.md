@@ -88,13 +88,6 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Start JupyterLab from the repository root so that the relative data and figure
-paths resolve correctly:
-
-```bash
-jupyter lab
-```
-
 The notebooks are independent and may be run separately. Run
 `Paper_data_analysis_2026_no_T0.ipynb` for the empirical analysis and
 `HPV_binary.ipynb` for model fitting and risk predictions.
@@ -102,7 +95,7 @@ The notebooks are independent and may be run separately. Run
 ## MCMC backend
 
 The modeling notebook uses an `emcee` HDF5 backend named `full_ipsi_HPV`. This
-file contains the MCMC chain, is approximately 678 MB, and is intentionally
+file contains the MCMC chain, is too large and is intentionally
 excluded from Git by `.gitignore`.
 
 The committed notebook is configured to resume an existing chain by passing
